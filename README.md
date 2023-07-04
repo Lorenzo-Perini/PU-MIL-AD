@@ -16,17 +16,17 @@ The repository contains:
 - create_ds.py, a function that generates the artificial 2D dataset for the Notebook;
 - build_bags.py, the algorithm that we used to create bags for benchmark datasets, as explained in the paper.
 
-To use PUMA, import the github repository or simply download the files. You can find the benchmark datasets at these links: [[DAMI](https://www.dbs.ifi.lmu.de/research/outlier-evaluation/DAMI/)] and [[ADBench](https://github.com/Minqi824/ADBench/tree/main/datasets/Classical)].
+To use PUMA, import the GitHub repository or simply download the files. You can find the benchmark datasets at these links: [[DAMI](https://www.dbs.ifi.lmu.de/research/outlier-evaluation/DAMI/)] and [[ADBench](https://github.com/Minqi824/ADBench/tree/main/datasets/Classical)].
 
 
-## EXample-wise ConfidEncE of anomaly Detectors (ExCeeD)
+## Positive and Unlabeled Multi-instance Anomaly detector (PUMA)
 
 Given a dataset with attributes **X** in bag shape (e.g., numpy array with 3 dimensions) and an array with the bag labels (1 for anomalous, 0 for unlabeled), PUMA works as follows. First, you need to specify the network structure as well as the key hyperparameters (# reliable negatives, learning rate, batch_size, epochs, ...). Second, using the fit function you can train PUMA. Finally, the decision function returns the anomaly probabilities for both bags and instances.
 Please, check out the Notebook for the details.
 
 ## Dependencies
 
-The `gammaGMM` function requires the following python packages to be used:
+The `PUMA` function requires the following python packages to be used:
 - [Python 3.9](http://www.python.org)
 - [Numpy 1.21.0](http://www.numpy.org)
 - [Pandas 1.4.1](https://pandas.pydata.org/)
